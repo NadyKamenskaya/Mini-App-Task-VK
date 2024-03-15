@@ -1,0 +1,48 @@
+{
+  "name": "mini-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@tanstack/react-query": "^5.28.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.89",
+    "@types/ramda": "^0.29.11",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.22",
+    "@vkontakte/vkui": "^6.0.1",
+    "axios": "^1.6.7",
+    "ramda": "^0.29.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
