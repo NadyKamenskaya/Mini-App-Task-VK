@@ -48,3 +48,7 @@ https://github.com/NadyKamenskaya/Mini-App-Task-VK/assets/106657729/3ec99d8a-f02
 _You can try UX/UI-friendly react app by clicking on the link below!_ 👇🏻
 
 [_**Click me**_](https://mini-app-task-vk.vercel.app/)
+
+_Link to the app in VK_ 👇🏻
+
+[_**Click me**_](https://vk.com/app51879168)
