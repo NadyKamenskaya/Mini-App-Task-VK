@@ -30,7 +30,7 @@ npm start
 
 ## Demo
 
-https://github.com/NadyKamenskaya/Community-Team-Task-VK/assets/106657729/5191828d-5f26-49ab-8627-8d010564361c
+https://github.com/NadyKamenskaya/Mini-App-Task-VK/assets/106657729/3ec99d8a-f024-456d-8387-93ef617e86c2
 
 
 _You can try UX/UI-friendly react app by clicking on the link below!_ 👇🏻
