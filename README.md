@@ -28,6 +28,18 @@ npm run build
 npm start
 ```
 
+### Running vk-tunnel (to work in your environment, you need to change the application ID in the configuration)
+
+```bash
+npm run tunnel
+```
+
+### Deploy (to work in your environment, you need to change the application ID in the configuration)
+
+```bash
+npm run deploy
+```
+
 ## Demo
 
 https://github.com/NadyKamenskaya/Mini-App-Task-VK/assets/106657729/3ec99d8a-f024-456d-8387-93ef617e86c2
