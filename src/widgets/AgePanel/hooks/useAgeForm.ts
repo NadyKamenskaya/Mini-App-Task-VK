@@ -8,19 +8,27 @@ type FormData = {
   name: string;
 };
 
-const useAgeForm = () => {
-  const { data, mutate, errorAxios } = useAge();
+type Props = {
+  setIsClick: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const useAgeForm = ({ setIsClick }: Props) => {
+  const { data, mutate, errorAxios, isPending, queryClient } = useAge();
   const methods = useForm<FormData>({ resolver: yupResolver(ageFormSchema) });
 
   const onSubmit = methods.handleSubmit(
-    async (formData: FormData) => {
-      if (data?.name !== formData.name) {
+    (formData: FormData) => {
+      if (isPending) {
+        queryClient.cancelQueries({ queryKey: ['age'] });
+      } else if (data?.name !== formData.name) {
         mutate(formData.name);
       }
+
+      setIsClick(false);
     }
   );
 
-  return { ...methods, onSubmit, data, errorAxios };
+  return { ...methods, onSubmit, data, errorAxios, mutate, isPending, queryClient };
 };
 
 export default useAgeForm;

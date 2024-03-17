@@ -11,7 +11,7 @@ type Props = {
 const useAge = () => {
   const [errorAxios, setErrorAxios] = useState<string>('');
 
-  const fetchAge = (name: string): Promise<Props> => axios
+  const fetchAge = async (name: string): Promise<Props> => axios
     .get('https://api.agify.io/', { params: { name } })
     .then((response) => {
       const age = response.data.age;
@@ -26,10 +26,10 @@ const useAge = () => {
       return error;
     });
 
-    useQueryClient();
-    const { data, mutate } = useMutation({ mutationKey: ['age'], mutationFn: fetchAge });
+    const queryClient = useQueryClient();
+    const { data, mutate, isPending } = useMutation({ mutationKey: ['age'], mutationFn: fetchAge });
 
-    return { data, mutate, errorAxios };
+    return { data, mutate, errorAxios, isPending, queryClient };
 };
 
 export default useAge;

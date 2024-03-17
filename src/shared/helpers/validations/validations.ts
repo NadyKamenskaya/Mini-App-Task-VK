@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 
-const latinLetters = /[A-Za-z]/g;
+export const latinLetters = /[A-Za-z]/g;
 
 export const requiredName = yup
   .string()
