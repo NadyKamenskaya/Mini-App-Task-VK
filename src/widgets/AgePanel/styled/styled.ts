@@ -8,7 +8,7 @@ export const styleDebounceInput = {
   fontSize: 14,
   lineHeight: '20px',
   textOverflow: 'ellipsis',
-  color: '#000',
+  color: '#fff',
   border: 'none',
   background: 'transparent',
 };

@@ -22,7 +22,7 @@ const Fact = () => {
   return (
     <>
       <FormItem top='Рандомный факт'>
-        <Textarea getRef={ref} placeholder='Здесь появится факт' />
+        <Textarea getRef={ref} grow placeholder='Здесь появится факт' />
       </FormItem>
       <Button
         mode='outline'
