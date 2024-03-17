@@ -35,4 +35,4 @@ https://github.com/NadyKamenskaya/Community-Team-Task-VK/assets/106657729/519182
 
 _You can try UX/UI-friendly react app by clicking on the link below!_ 👇🏻
 
-[_**Click me**_](https://community-team-task-vk.vercel.app/)
+[_**Click me**_](https://mini-app-task-vk.vercel.app/)
